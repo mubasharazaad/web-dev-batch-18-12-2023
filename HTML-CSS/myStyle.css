@@ -1,0 +1,18 @@
+body{
+    background: darkgray;
+}
+
+.container
+{
+    padding: 20px;
+    background: gray;
+    display: flex;
+}
+.dev-1
+{
+    padding: 20px;
+}
+.dev-2
+{
+    padding: 20px;
+}
