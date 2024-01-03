@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript Class-2</title>
+</head>
+<body>
+
+
+<script>
+
+  function grade(obtainMarks, total = 1100)
+  {
+    // let obtainMarks = 820;
+    // let total = 1100;
+
+    const result = (obtainMarks / total) * 100;
+
+    // if Statements
+    // if(condition)
+    // {
+    //   statements...
+    // }
+    // else
+    // {
+    // statements....
+    // }
+
+    if (result >=80)
+    {
+      document.write('Eligible for Admission');
+      console.log('Eligible for Admission');
+    }
+    else if(result >= 75)
+    {
+      document.write('Awaiting');
+      console.log('Awaiting');
+    }
+    else if(result >= 70 && result < 75)
+    {
+      document.write('Eligible for Evening Batch');
+      console.log('Eligible for Evening Batch');
+    }
+    else
+    {
+      document.write('Not Eligible');
+      console.log('Not Eligible');
+    }
+  }
+
+
+  document.write('<br>');
+
+  grade(800);
+  function sum(num1, num2)
+  {
+    return num1 + num2;
+    // statements
+  }
+
+  document.write(sum(66,99));
+
+
+
+</script>
+</body>
+</html>
