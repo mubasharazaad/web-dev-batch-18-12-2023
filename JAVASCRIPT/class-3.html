@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Class-3</title>
+</head>
+<body>
+
+</body>
+
+<script>
+  // Using square brackets
+  let fruits = ['apple', 'banana', 'orange'];
+
+  let test = 'abc';
+  // console.log(typeof fruits);
+  console.log(fruits);
+
+  // if (isNaN(test))
+  // {
+  //   console.log('alphabetcs');
+  // }
+  // else
+  // {
+  //   console.log('number333')
+  // }
+
+  //
+  // // Using Array constructor
+  // let numbers = new Array(1, 2, 3, 4, 5);
+
+  // console.log(fruits[0]); // Output: 'apple'
+  // console.log(numbers[2]); // Output: 3
+  //
+  // // How to Recognize an Array?
+  // console.log(typeof fruits); // Output: 'object'
+  // if (Array.isArray(fruits))
+  // {
+  //   // console.log('array');
+  // }
+  // console.log(Array.isArray(fruits)); // Output: true
+  // console.log(fruits instanceof Array); // Output: true
+  //
+  //
+  // // Array methods (with examples):
+  //
+  console.log(fruits.toString()); // Output: 'apple,banana,orange'
+  console.log(fruits.join(' - ')); // Output: 'apple - banana - orange'
+  //
+  fruits.push('grape'); // Adds 'grape' to the end
+  console.log(fruits); // Output: ['apple', 'banana', 'orange', 'grape']
+  //
+  fruits.pop(); // Removes the last element ('grape')
+  console.log(fruits); // Output: ['apple', 'banana', 'orange']
+  //
+  fruits.unshift('grape'); // Adds 'grape' to the beginning
+  console.log(fruits); // Output: ['grape', 'apple', 'banana', 'orange']
+  //
+  fruits.shift(); // Removes the first element ('grape')
+  console.log(fruits); // Output: ['apple', 'banana', 'orange']
+  //
+  fruits.splice(1, 2, 'pear', 'kiwi'); // Removes 2 elements starting from index 1 and adds 'pear' and 'kiwi'
+  console.log(fruits); // Output: ['apple', 'pear', 'kiwi']
+  let slicedFruits = fruits.slice(1, 2); // Copies elements from index 1 to index 2 (exclusive)
+  console.log(slicedFruits); // Output: ['pear']
+  //
+  //
+  delete fruits[1]; // Deletes the element at index 1
+  // console.log(fruits); // Output: ['apple', <empty>, 'kiwi']
+  //
+  let moreFruits = ['melon', 'grapefruit'];
+  let allFruits = fruits.concat(moreFruits); // Concatenates arrays
+  console.log(allFruits); // Output: ['apple', 'kiwi', 'melon', 'grapefruit']
+  //
+  //
+  console.log(fruits.indexOf('kiwi')); // Output: 1
+  console.log(fruits.lastIndexOf('apple')); // Output: 0
+  console.log(fruits.includes('orange')); // Output: false
+
+</script>
+
+</html>
