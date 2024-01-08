@@ -28,5 +28,16 @@ Display the first and last favorite programming language of any student.
 Display the marks of any 2 subjects of any student.
 
 
+Loop Assignments
+1 Sum all the array elements by using a loop.
+2 Make a reverse of the array by using a loop.
+3 Make a table of the given number with all possible loops.
+4 Find the largest number in an array by using a loop.
+5 Find the smallest number in an array by using a loop.
+6 Make an array to store the name of 5 students and iterate with for and foreach loop.
+7 Make an object to store the information of a student and iterate with a for-in loop.
+
+
+
 
 
