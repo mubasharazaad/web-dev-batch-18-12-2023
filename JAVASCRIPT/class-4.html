@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>class-4</title>
+</head>
+<body>
+<p id="paragraph">
+
+</p>
+
+<script src="javascript-data.js"></script>
+</body>
+</html>
+
+<script>
+    let students = [
+        {
+            name: 'Alice',
+            age: 20,
+            registrationNumber: 'ABC123',
+            course: 'Computer Science',
+            favoriteLanguages: ['JavaScript', 'Python', 'C++'],
+            marks: {
+                math: 85,
+                physics: 78,
+                chemistry: 90,
+                biology: 92,
+                english: 88
+            }
+        },
+        {
+            name: 'Bob',
+            age: 21,
+            registrationNumber: 'XYZ456',
+            course: 'Engineering',
+            favoriteLanguages: ['Java', 'Python', 'C'],
+            marks: {
+                math: 78,
+                physics: 85,
+                chemistry: 80,
+                biology: 75,
+                english: 82
+            }
+        }
+    ];
+
+
+    // Displaying all properties of the first student
+    let firstStudent = students[0];
+    console.log(students[0].course);
+
+    console.log(firstStudent[0]);
+
+    // for (let property in firstStudent) {
+    //     console.log(`${property}: ${firstStudent[property]}`);
+    // }
+
+    // Displaying first and last favorite languages of the second student
+    let secondStudentLanguages = students[1].favoriteLanguages;
+    console.log(`First Language: ${secondStudentLanguages[0]}`);
+    console.log(`Last Language: ${secondStudentLanguages[secondStudentLanguages.length - 1]}`);
+
+    // Displaying marks of two subjects of the first student
+    let subjects = Object.keys(students[0].marks);
+    console.log(`Marks in ${subjects[0]}: ${students[0].marks[subjects[0]]}`);
+    console.log(`Marks in ${subjects[1]}: ${students[0].marks[subjects[1]]}`);
+
+</script>

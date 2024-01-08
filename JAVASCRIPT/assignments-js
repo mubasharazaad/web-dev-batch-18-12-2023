@@ -4,7 +4,7 @@
 4 Convert temperatures from Celsius to Fahrenheit and Fahrenheit to Celsius.
 5 Check from the given integer, whether it is positive or negative.
 6 Check whether a given number is even or odd.
-7 Check whether a given positive number is a multiple of 3.
+7 Check whether a given positive number is a multip le of 3.
 8 Determine whether a given year is a leap year.
 9 All the prior tasks are to be solved with functions.
 
@@ -16,3 +16,17 @@ Array Assignments
 3 Make an array to store the names of students and check whether that array has your own name or not and also return the index of that value.
 4 Add the array element at the specified index.
 5 Delete the array element from the specified index.
+
+Objects Assignments
+
+Make an array of objects (an array that will have objects) to store the student information and access it as hard-coded.
+Information to store:
+Name, age, registration number, course, favorite programming languages (should be an array), Marks of 5 different subjects (should be an object).
+The operations to perform:
+Display every single property of any student.
+Display the first and last favorite programming language of any student.
+Display the marks of any 2 subjects of any student.
+
+
+
+
