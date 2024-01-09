@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class-6</title>
+</head>
+<body>
+
+<div id="myDiv"></div>
+<a href="javascript-data.js" id="myBtn" name="myBtn"> Go to Google</a>
+<p></p>
+<form>
+  <label for="studentname"> Student Name</label>
+  <input type="text" name="studentname" id="studentname" value="Imran Khan">
+  <input type="text" name="studentname"  value="Imran Khan" class="student_data">
+  <input type="text" name="studentname"  value="Imran Khan" class="student_data">
+  <input type="text" name="studentname"  value="Imran Khan" class="student_data">
+  <input type="text" name="studentname"  value="Imran Khan" class="student_data">
+  <input type="text" name="studentname"  value="Imran Khan" class="student_data">
+  <input type="text" name="studentname"  value="Imran Khan" class="student_data">
+  <input type="text" name="studentname"  value="Imran Khan" class="student_data">
+  <input type="text" name="studentname"  value="Imran Khan" class="student_data">
+</form>
+
+</body>
+
+<script>
+
+  // HTML: <div id="myDiv">Hello</div>
+  // const elementById = document.getElementById('studentname').value;
+  // console.log(elementById);
+  // HTML: <p>Hello</p><p>World</p>
+
+
+
+  const elementsByTagName = document.getElementsByTagName('input');
+  console.log(elementsByTagName);
+
+
+  // const elementsByClassName = document.getElementsByClassName('student_data');
+  // console.log(elementsByClassName);
+
+
+  const elementByQuerySelector = document.querySelector('.student_data');
+  console.log(elementByQuerySelector);
+
+
+  const elementsByQuerySelectorAll = document.querySelectorAll('.student_data');
+  console.log(elementsByQuerySelectorAll);
+
+  // const myDiv = document.getElementById('myDiv');
+  // myDiv.innerText = 'Goodbye';
+
+
+  const myDiv = document.getElementById('myDiv');
+  myDiv.innerHTML = '<h2>Goodbye</h2>';
+  myDiv.style.color = 'blue';
+  myDiv.style.background = 'red';
+  myDiv.style.textAlign = 'center';
+
+  // myDiv.remove();
+
+  // myDiv.innerHTML = '<h1>New Heading</h1>';
+
+  // // HTML: <div class="example">Example</div>
+  // const elementsByClassName = document.getElementsByClassName('example');
+  // // HTML: <span class="highlight">Highlighted</span>
+  // const elementByQuerySelector = document.querySelector('.highlight');
+  // // HTML: <span class="highlight">Highlighted</span>
+  // const elementByQuerySelector = document.querySelector('.highlight');
+  // // HTML: <ul><li>Item 1</li><li>Item 2</li></ul>
+  // const elementsByQuerySelectorAll = document.querySelectorAll('ul li');
+  // // HTML: <div id="myDiv">Hello</div>
+  // const myDiv = document.getElementById('myDiv');
+  // console.log(myDiv.innerText); // Output: Hello
+  // myDiv.innerText = 'Goodbye';
+  // // HTML: <div id="myDiv"><p>Hello</p></div>
+  // const myDiv = document.getElementById('myDiv');
+  // console.log(myDiv.innerHTML); // Output: <p>Hello</p>
+  // myDiv.innerHTML = '<p>Goodbye</p>';
+  // // HTML: <div id="myDiv">Hello</div>
+  // const myDiv = document.getElementById('myDiv');
+  // myDiv.style.color = 'blue';
+  // myDiv.style.backgroundColor = 'yellow';
+  // const newDiv = document.createElement('div');
+  // // Creating a new paragraph and appending it to the body
+  const newPara = document.createElement('p');
+  newPara.innerText = 'New paragraph';
+  myDiv.appendChild(newPara);
+  ///
+  // // Creating a new header and prepending it to an existing div
+  // const newHeader = document.createElement('h1');
+  // newHeader.innerText = 'New header';
+  // const existingDiv = document.getElementById('existingDiv');
+  // existingDiv.prepend(newHeader);
+  // const elementToRemove = document.getElementById('toBeRemoved');
+  // elementToRemove.remove();
+  // // Getting and setting attributes
+  const link = document.getElementById('myBtn');
+  const hrefValue = link.getAttribute('href');
+  link.setAttribute('href', 'https://www.google.com');
+  //
+  // // Removing an attribute
+  // link.removeAttribute('target');
+  // // HTML: <div id="myDiv" data-info="example">Content</div>
+  // const myDiv = document.getElementById('myDiv');
+  // const dataValue = myDiv.dataset.info; // Output: example
+  // // Adding, removing, and toggling classes
+  const element = document.getElementById('myElement');
+  //
+  element.classList.add('newClass');
+  element.classList.remove('oldClass');
+  element.classList.toggle('active');
+
+</script>
+</html>
